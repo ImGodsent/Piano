@@ -1,33 +1,53 @@
-:root{
-    --white: #FFF;
-    --grey: #CCC;
-    --black: #000;
+:root {
+  --white: #FFF;
+  --grey: #CCC;
+  --black: #000;
+  --darker: #333;
+  --background: #111;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.piano{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;    
+body {
+  background: var(--background);
+}
+
+.piano {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .white {
-    width: 9%;
-    height: 60%;
-    background: var(--white);
-    border: 1px solid var(--grey);
+  width: 9%;
+  height: 70%;
+  background: var(--white);
+  border: 1px solid var(--grey);
+}
+
+.white:active {
+  background: var(--grey);
 }
 
 .black {
-    width: 6%;
-    height: 45%;
-    background: var(--black);
-    z-index: 10;
-    margin: 0 -4%;
+  width: 8%;
+  height: 45%;
+  background: var(--black);
+  z-index: 10;
+  margin: 0 -4%;
 }
+
+.black:active {
+  background: var(--darker);
+}
+/*# sourceMappingURL=main.css.map */
