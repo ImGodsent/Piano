@@ -28,11 +28,27 @@ body {
           justify-content: center;
 }
 
+.key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
 .white {
   width: 9%;
   height: 70%;
   background: var(--white);
   border: 1px solid var(--grey);
+  color: var(--black);
 }
 
 .white:active {
@@ -45,6 +61,7 @@ body {
   background: var(--black);
   z-index: 10;
   margin: 0 -4%;
+  color: var(--white);
 }
 
 .black:active {

@@ -23,11 +23,21 @@ body{
     justify-content: center;    
 }
 
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
 .white {
     width: 9%;
     height: 70%;
     background: var(--white);
     border: 1px solid var(--grey);
+    color: var(--black);
 
     &:active{
         background: var(--grey);
@@ -40,6 +50,7 @@ body{
     background: var(--black);
     z-index: 10;
     margin: 0 -4%;
+    color: var(--white);
 
     &:active{
         background: var(--darker);
